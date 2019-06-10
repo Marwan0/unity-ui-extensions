@@ -1,3 +1,23 @@
+# README for this github repo only
+This repo is intended to add the packages via git links, because the original upm branch doesn't play nice with upm via git links. If you want to add packages via disk, it's might be better to use the original [upm branch](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/src/UPM/) from bitbucket instead.
+
+To add the packages you need git installed in your system.
+Find `packages.json` on your Packages folder and add this line `"com.ddreaper.unity-ui-extensions": "https://github.com/SuperPenguin/unity-ui-extensions.git#master",` like this:
+```
+{
+  "dependencies": {
+    ...
+    "com.ddreaper.unity-ui-extensions": "https://github.com/SuperPenguin/unity-ui-extensions.git#master",
+    ...
+  },
+}
+```
+or use [UpmGitExtension](https://github.com/mob-sakai/UpmGitExtension) to make your life easier.
+
+To import example select `uGUI/Import Example`
+
+Only submit Issues here if you have trouble to add this repo via git links, otherwise go to bitbucket repo to submit other issues. All credits belong to original Author(s).
+
 # README
 
 This is an extension project for the new Unity UI system which can be found at: [Unity UI Source](https://bitbucket.org/Unity-Technologies/ui)
