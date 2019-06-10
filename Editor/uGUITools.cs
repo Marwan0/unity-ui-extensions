@@ -1,6 +1,7 @@
 ﻿/// Credit Senshi  
 /// Sourced from - http://forum.unity3d.com/threads/scripts-useful-4-6-scripts-collection.264161/ (uGUITools link)
 
+using System.IO;
 using UnityEditor;
 namespace UnityEngine.UI.Extensions
 {
@@ -110,6 +111,14 @@ namespace UnityEngine.UI.Extensions
 
                 t.localScale = new Vector3(t.localScale.x, -t.localScale.y, t.localScale.z);
             }
+        }
+
+        [MenuItem("uGUI/Import Example")]
+        static void ImportExample()
+        {
+            string packagePath = Path.GetFullPath("Packages/com.ddreaper.unity-ui-extensions");
+
+            AssetDatabase.ImportPackage(packagePath + "/Examples Package.unitypackage", true);
         }
     }
 }
