@@ -1,8 +1,8 @@
-# README for this github repo only
-This repo is intended to add the packages via git links, because the original upm branch doesn't play nice with upm via git links. If you want to add packages via disk, it's might be better to use the original [upm branch](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/src/UPM/) from bitbucket instead.
+# README for this repo only
+This repo is intended to add the packages via git links, because the original upm branch doesn't play nice with upm via git links. If you want to add packages via disk, it might be better to use the original [upm branch](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/src/UPM/) from bitbucket instead.
 
 To add the packages you need git installed in your system.
-Find `packages.json` on your Packages folder and add this line `"com.ddreaper.unity-ui-extensions": "https://github.com/SuperPenguin/unity-ui-extensions.git#master",` like this:
+Find `manifest.json` on your Packages folder and add this line `"com.ddreaper.unity-ui-extensions": "https://github.com/SuperPenguin/unity-ui-extensions.git#master",` like this:
 ```
 {
   "dependencies": {
